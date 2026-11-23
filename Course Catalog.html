@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalog.css">
+    <title>Admin - Course Catalog</title>
+</head>
+
+<body>
+    <nav class="admin-nav">
+        <div class="nav-left">
+            <h2 class="logo">CR</h2>
+            <h2 class="brand">Course Registration</h2>
+            <div class="nav-links">
+
+                <a href="#" class="active">Courses</a>
+
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="avatar">AD</div>
+            <span class="user-name">Admin</span>
+            <a href="admin-signin.html" class="btn-logout">Log out</a>
+        </div>
+    </nav>
+
+    <main class="admin-container">
+        <section class="admin-card">
+            <div class="card-header">
+                <div>
+                    <h1>Course Catalog</h1>
+                    <p class="subtitle">Fall 2026 · Add, update, or delete courses</p>
+                </div>
+                <button type="button" class="btn-primary">Add course</button>
+            </div>
+
+            <form class="course-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="courseCode">Course code</label>
+                        <input type="text" id="courseCode" value="CS301">
+                    </div>
+                    <div class="form-group">
+                        <label for="courseTitle">Title</label>
+                        <input type="text" id="courseTitle" value="Database Systems">
+                    </div>
+                    <div class="form-group">
+                        <label for="courseCredits">Credits</label>
+                        <input type="number" id="courseCredits" value="3">
+                    </div>
+                    <div class="form-group">
+                        <label for="courseCapacity">Capacity</label>
+                        <input type="number" id="courseCapacity" value="40">
+                    </div>
+                    <button type="submit" class="btn-save">Save</button>
+                </div>
+            </form>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Course</th>
+                        <th>Schedule</th>
+                        <th>Enrolled</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CS301</strong></td>
+                        <td>Database Systems</td>
+                        <td>Tue, Thu 10:00</td>
+                        <td>28 / 40</td>
+                        <td class="actions-cell">
+                            <a href="#" class="link-edit">Edit</a>
+                            <a href="#" class="link-delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>CS210</strong></td>
+                        <td>Algorithms</td>
+                        <td>Mon, Wed 12:00</td>
+                        <td>37 / 40</td>
+                        <td class="actions-cell">
+                            <a href="#" class="link-edit">Edit</a>
+                            <a href="#" class="link-delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>MATH201</strong></td>
+                        <td>Discrete Mathematics</td>
+                        <td>Mon, Wed 11:00</td>
+                        <td>31 / 40</td>
+                        <td class="actions-cell">
+                            <a href="#" class="link-edit">Edit</a>
+                            <a href="#" class="link-delete">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="section-title">Enrolled students: CS210 Algorithms</h2>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sara Ahmed</td>
+                        <td>20230145</td>
+                        <td>sara.ahmed@capu.edu.eg</td>
+                    </tr>
+                    <tr>
+                        <td>Youssef Tarek</td>
+                        <td>20230188</td>
+                        <td>youssef.tarek@capu.edu.eg</td>
+                    </tr>
+                    <tr>
+                        <td>Mariam Hany</td>
+                        <td>20230207</td>
+                        <td>mariam.hany@capu.edu.eg</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="table-footer-note">Showing 3 of 37 students</p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        Capital University. Fall 2026
+    </footer>
+</body>
+
+</html>

@@ -4,13 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in - Course Registration</title>
 </head>
 
 <body>
-    rana magdy
-    jana wael 
+    <nav>
+        <h2 class="logo">CR</h2>
+        <h2 class="brand">Course Registration </h2>
 
+
+    </nav>
+    <main class="container">
+        <div class="card">
+            <h1 class="card-title">Sign in</h1>
+            <div class="role-tabs">
+                <a href="index.html" class="tab-btn active">Student</a>
+                <a href="admin-signin.html" class="tab-btn">Admin portal</a>
+            </div>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="sara.ahmed@capu.edu.eg" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="input-error" placeholder="•••••" required>
+                </div>
+                <a href="dashboardstudent.html" class="btn-submit">Sign in</a>
+            </form>
+
+            <div class="card-footer">
+                <a href="#" class="forgot-link">Forgot password?</a>
+                <hr class="divider">
+                <p class="signup-text">
+                    Don't have an account? <a href="#">Create account</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        Capital University. Fall 2026
+    </footer>
 </body>
 
 </html>
