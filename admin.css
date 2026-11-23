@@ -7,7 +7,7 @@
 body {
     background-color: #FAF6F9;
     color: #572D49;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: system-ui, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
