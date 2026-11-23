@@ -1,80 +1,104 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFFFF;
+    background-color: #FAF6F9;
     color: #572D49;
+    font-family: system-ui, -apple-system, sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background-color: #572D49;
-    display: flex;
+    height: 78px;
+    padding: 0 56px;
+    gap: 12px;
     align-items: center;
-    padding: 15px 40px;
+    display: flex;
 }
 
 .logo {
-    background-color: white;
+    width: 42px;
+    height: 42px;
+    background-color: #FFFFFF;
     color: #572D49;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #FFFFFF;
     font-size: 20px;
-    color: white;
-    margin-left: 15px;
 }
 
 .container {
-    width: 90%;
-    max-width: 450px;
-    margin: 55px auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
 .card {
-    background-color: white;
+    background-color: #FFFFFF;
     border: 1px solid #E8DCE5;
-    border-radius: 8px;
-    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 440px;
+    padding: 32px;
 }
 
 .card-title {
+    font-size: 24px;
+    font-weight: 700;
     color: #572D49;
-    font-size: 28px;
-    margin-bottom: 25px;
-    text-align: center;
+    margin-bottom: 24px;
+    text-align: left;
 }
 
 .role-tabs {
     display: flex;
-    border-bottom: 1px solid #E8DCE5;
-    margin-bottom: 25px;
+    gap: 10px;
+    margin-bottom: 24px;
 }
 
 .tab-btn {
     flex: 1;
-    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #E8DCE5;
+    background-color: #865274;
+    color: #FFFFFF;
+    transition: 0.2s;
     text-decoration: none;
-    color: #8B7483;
-    padding: 12px;
-    font-size: 15px;
-}
-
-.tab-btn.active {
-    color: #572D49;
-    font-weight: bold;
-    border-bottom: 3px solid #865274;
+    text-align: center;
+    display: block;
 }
 
 .tab-btn:hover {
     color: #572D49;
+    border-color: #865274;
+}
+
+.tab-btn.active {
+    background-color: #FFFFFF;
+    color: #865274;
+    border-color: #865274;
 }
 
 .auth-form {
@@ -82,29 +106,30 @@ nav {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    color: #572D49;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
+    color: #572D49;
 }
 
 .form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 12px 14px;
     border: 1px solid #E8DCE5;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 14px;
-    background-color: white;
     color: #572D49;
+    background-color: #FFFFFF;
+    outline: none;
 }
 
 .form-group input:focus {
-    outline: none;
     border-color: #865274;
 }
 
@@ -112,22 +137,29 @@ nav {
     color: #B5A2AE;
 }
 
-.form-group .input-error {
+.form-group input.input-error {
     border-color: #C98B9B;
+}
+
+.error-msg {
+    font-size: 13px;
+    color: #C98B9B;
 }
 
 .btn-submit {
     display: block;
-    width: 100%;
     text-align: center;
-    background-color: #865274;
-    color: white;
     text-decoration: none;
+    width: 100%;
     padding: 12px;
-    border-radius: 5px;
+    margin-top: 6px;
+    background-color: #865274;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
     font-size: 15px;
-    font-weight: bold;
-    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .btn-submit:hover {
@@ -135,14 +167,14 @@ nav {
 }
 
 .card-footer {
-    margin-top: 25px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .forgot-link {
-    text-decoration: none;
-    color: #865274;
     font-size: 14px;
+    color: #8B7483;
+    text-decoration: none;
 }
 
 .forgot-link:hover {
@@ -153,28 +185,27 @@ nav {
 .divider {
     border: none;
     border-top: 1px solid #E8DCE5;
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
 .signup-text {
-    color: #8B7483;
     font-size: 14px;
+    color: #8B7483;
 }
 
 .signup-text a {
     color: #865274;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .signup-text a:hover {
     color: #572D49;
-    text-decoration: underline;
 }
 
 .page-footer {
     text-align: center;
-    color: #8B7483;
-    font-size: 13px;
     padding: 20px;
+    font-size: 13px;
+    color: #8B7483;
 }
