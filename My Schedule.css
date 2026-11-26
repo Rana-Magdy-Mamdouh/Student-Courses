@@ -86,7 +86,104 @@
      padding: 8px 14px;
      border-radius: 6px;
  }
+.container {
+  max-width: 100%;
+  margin: 36px auto;
+  padding: 0 32px;
+}
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.title-group h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #4a2339;
+  margin-bottom: 4px;
+}
+
+.header-meta {
+  font-size: 13px;
+  color: #7a6270;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #4a2339;
+  border: 2px solid #d1c1ca;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: #faf7f9;
+}
+
+
+.schedule-section {
+  margin-bottom: 36px;
+}
+
+.schedule-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4a2339;
+  margin-bottom: 14px;
+}
+.clean-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.clean-table th {
+  color: #7a6270;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 8px;
+  border-bottom: 1px solid #e6dce2;
+}
+
+.clean-table td {
+  padding: 14px 8px;
+  font-size: 14px;
+  color: #3a1f2e;
+  border-bottom: 1px solid #eee6eb;
+}
+.clean-table:not(.courses-table) th,
+.clean-table:not(.courses-table) td {
+  width: 16.66%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn-drop-text {
+  background: none;
+  border: none;
+  color: #b83232;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.btn-drop-text:hover {
+  text-decoration: underline;
+}
  .page-footer {
      text-align: center;
      padding: 20px;

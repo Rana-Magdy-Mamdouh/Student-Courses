@@ -12,7 +12,6 @@
 
 <body>
     <nav>
-
         <div class="nav-left">
             <h2 class="logo">CR</h2>
             <h2 class="brand">Courses Rout</h2>
@@ -27,11 +26,113 @@
             <span class="user-name">Student</span>
             <a href="index.html" class="btn-logout">Log out</a>
         </div>
-
-
-
     </nav>
+    <main class="container">
+    
+        <!-- Top Header + Print/Export Buttons -->
+        <div class="page-header">
+        <div class="title-group">
+            <h1>My schedule</h1>
+            <p class="header-meta">12 of 18 credit hours &middot; Drop deadline: Dec 1, 2026</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn-outline" onclick="window.print()">Print</button>
+            <button class="btn-outline">Export PDF</button>
+        </div>
+        </div>
 
+        <!-- Weekly Timetable Section -->
+        <section class="schedule-section">
+        <h2>Weekly timetable</h2>
+
+        <table class="clean-table">
+            <thead>
+            <tr>
+                <th>Time</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>09:00 to 10:30</td>
+                <td><strong>CS340</strong></td>
+                <td></td>
+                <td></td>
+                <td><strong>CS340</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:00 to 11:30</td>
+                <td></td>
+                <td></td>
+                <td><strong>CS301</strong></td>
+                <td></td>
+                <td><strong>CS301</strong></td>
+            </tr>
+            <tr>
+                <td>12:00 to 13:30</td>
+                <td></td>
+                <td><strong>CS210</strong></td>
+                <td></td>
+                <td><strong>CS210</strong></td>
+                <td><strong>CS450</strong></td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+
+        <!-- Registered Courses Section -->
+        <section class="schedule-section">
+        <h2>Registered courses</h2>
+
+        <table class="clean-table courses-table">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Course</th>
+                <th>Days</th>
+                <th>Credits</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>CS301</strong></td>
+                <td>Database Systems</td>
+                <td>Tue, Thu</td>
+                <td>3</td>
+                <td class="text-right"><button class="btn-drop-text">Drop</button></td>
+            </tr>
+            <tr>
+                <td><strong>CS210</strong></td>
+                <td>Algorithms</td>
+                <td>Mon, Wed</td>
+                <td>3</td>
+                <td class="text-right"><button class="btn-drop-text">Drop</button></td>
+            </tr>
+            <tr>
+                <td><strong>CS340</strong></td>
+                <td>Software Engineering</td>
+                <td>Sun, Wed</td>
+                <td>3</td>
+                <td class="text-right"><button class="btn-drop-text">Drop</button></td>
+            </tr>
+            <tr>
+                <td><strong>CS450</strong></td>
+                <td>Computer Networks</td>
+                <td>Thu</td>
+                <td>3</td>
+                <td class="text-right"><button class="btn-drop-text">Drop</button></td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+
+    </main>
     <footer class="page-footer">
         Capital University. Fall 2026
     </footer>
